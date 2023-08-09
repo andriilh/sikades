@@ -1,0 +1,79 @@
+CRITICAL - 2022-11-03 05:46:38 --> Invalid file: dashboard/pages/admin/v_lihat_file_keluar_masuk_pdf.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/pages/admin/v_lihat_file_keluar_masuk_pdf.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_lihat_file_keluar_masuk_pdf', [], true)
+ 3 APPPATH\Controllers\CUtama.php(265): view('dashboard/pages/admin/v_lihat_file_keluar_masuk_pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_lihat_file_surat_keluar_sekertaris('JURNAL_MeldaZulaiqah_17111073.pdf')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 06:26:40 --> Undefined variable: datasuratmasuk
+in APPPATH\Views\dashboard\pages\kepala\v_surat_masuk.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\kepala\v_surat_masuk.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datasuratmasuk', 'APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_masuk.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_masuk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/kepala/v_surat_masuk', [], true)
+ 5 APPPATH\Controllers\CUtama.php(176): view('dashboard/pages/kepala/v_surat_masuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_konfirmasi_surat_keluar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 06:26:56 --> Undefined variable: datasuratmasuk
+in APPPATH\Views\dashboard\pages\kepala\v_surat_masuk.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\kepala\v_surat_masuk.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datasuratmasuk', 'APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_masuk.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_masuk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/kepala/v_surat_masuk', [], true)
+ 5 APPPATH\Controllers\CUtama.php(176): view('dashboard/pages/kepala/v_surat_masuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_konfirmasi_surat_keluar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 06:27:55 --> Undefined index: id_surat_masuk
+in APPPATH\Views\dashboard\pages\kepala\v_surat_keluar.php on line 61.
+ 1 APPPATH\Views\dashboard\pages\kepala\v_surat_keluar.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_surat_masuk', 'APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_keluar.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\kepala\\v_surat_keluar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/kepala/v_surat_keluar', [], true)
+ 5 APPPATH\Controllers\CUtama.php(176): view('dashboard/pages/kepala/v_surat_keluar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_konfirmasi_surat_keluar()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 06:53:47 --> File not found: Suratmasuk/09- Teknik Pemogramam 8051.pdf
+in SYSTEMPATH\Files\File.php on line 46.
+ 1 SYSTEMPATH\Files\File.php(46): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('Suratmasuk/09- Teknik Pemogramam 8051.pdf')
+ 2 SYSTEMPATH\HTTP\DownloadResponse.php(97): CodeIgniter\Files\File->__construct('Suratmasuk/09- Teknik Pemogramam 8051.pdf', true)
+ 3 SYSTEMPATH\HTTP\ResponseTrait.php(781): CodeIgniter\HTTP\DownloadResponse->setFilePath('Suratmasuk/09- Teknik Pemogramam 8051.pdf')
+ 4 APPPATH\Controllers\CSekertaris.php(493): CodeIgniter\HTTP\Response->download('09- Teknik Pemogramam 8051.pdf', null)
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->download_file_surat_masuk('09- Teknik Pemogramam 8051.pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 07:46:33 --> Invalid file: dashboard/pages/lurah/link_konfirmasi_surat_masuk.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/pages/lurah/link_konfirmasi_surat_masuk.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/lurah/link_konfirmasi_surat_masuk', [], true)
+ 3 APPPATH\Controllers\CLurah.php(65): view('dashboard/pages/lurah/link_konfirmasi_surat_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLurah->cari_data_surat_masuk_lurah()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLurah))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 07:50:07 --> Invalid file: dashboard/pages/kepala/link_konfirmasi_surat_masuk.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/pages/kepala/link_konfirmasi_surat_masuk.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/kepala/link_konfirmasi_surat_masuk', [], true)
+ 3 APPPATH\Controllers\CLurah.php(63): view('dashboard/pages/kepala/link_konfirmasi_surat_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLurah->cari_data_surat_masuk_lurah()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLurah))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 07:50:17 --> Invalid file: dashboard/pages/kepala/link_konfirmasi_surat_masuk.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/pages/kepala/link_konfirmasi_surat_masuk.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/kepala/link_konfirmasi_surat_masuk', [], true)
+ 3 APPPATH\Controllers\CLurah.php(63): view('dashboard/pages/kepala/link_konfirmasi_surat_masuk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLurah->cari_data_surat_masuk_lurah()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLurah))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

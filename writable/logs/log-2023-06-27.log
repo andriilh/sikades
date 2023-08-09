@@ -1,0 +1,25 @@
+ERROR - 2023-06-27 23:10:19 --> mysqli_sql_exception: Duplicate entry 'MSY-20236281190' for key 'PRIMARY' in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MLogin.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CLogin.php(250): App\Models\MLogin->proses_tambah_data_pengguna(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CLogin->registrasi()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-27 23:10:20 --> Duplicate entry 'MSY-20236281190' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `no_hp`, `email`) VALUES (\'MSY-20236281190\', \'siti aminah\', \'3072892327\', \'085217767265\', \'aminah12@gmail.com\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `no_hp`, `email`) VALUES (\'MSY-20236281190\', \'siti aminah\', \'3072892327\', \'085217767265\', \'aminah12@gmail.com\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `no_hp`, `email`) VALUES (\'MSY-20236281190\', \'siti aminah\', \'3072892327\', \'085217767265\', \'aminah12@gmail.com\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `no_hp`, `email`) VALUES (:id_masyarakat:, :nama_masyarakat:, :NIK:, :no_hp:, :email:)', [...], false)
+ 5 APPPATH\Models\MLogin.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CLogin.php(250): App\Models\MLogin->proses_tambah_data_pengguna([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->registrasi()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,152 @@
+CRITICAL - 2022-10-30 04:13:11 --> Could not move file phpBBBE.tmp to / ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpBBBE.tmp', 'C:\\', 'C:\\xampp\\htdocs\\SIKADES4')
+ 2 APPPATH\Controllers\CSekertaris.php(104): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 21:42:35 --> Undefined variable: variable
+in APPPATH\Views\dashboard\pages\admin\v_surat_masuk.php on line 39.
+ 1 APPPATH\Views\dashboard\pages\admin\v_surat_masuk.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: variable', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_surat_masuk', [], true)
+ 5 APPPATH\Controllers\CUtama.php(125): view('dashboard/pages/admin/v_surat_masuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_surat_masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-30 21:43:24 --> mysqli_sql_exception: Unknown column 'disposisi' in 'field list' in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 21:43:24 --> Unknown column 'disposisi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4.jfif\', \'penting\', \'diss\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (:id_surat_masuk:, :kode_surat:, :no_surat:, :tgl_masuk:, :tgl_surat:, :pengirim:, :kepada:, :perihal:, :file:, :status:, :disposisi:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-30 21:43:53 --> mysqli_sql_exception: Column 'tgl_surat' cannot be null in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 21:43:53 --> Column 'tgl_surat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_1.jfif\', \'penting\', \'diss\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_1.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_1.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (:id_surat_masuk:, :kode_surat:, :no_surat:, :tgl_masuk:, :tgl_surat:, :pengirim:, :kepada:, :perihal:, :file:, :status:, :disposisi:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-30 21:48:50 --> mysqli_sql_exception: Column 'tgl_surat' cannot be null in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 21:48:50 --> Column 'tgl_surat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_2.jfif\', \'penting\', \'diss\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_2.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_2.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (:id_surat_masuk:, :kode_surat:, :no_surat:, :tgl_masuk:, :tgl_surat:, :pengirim:, :kepada:, :perihal:, :file:, :status:, :disposisi:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-30 21:50:01 --> mysqli_sql_exception: Column 'tgl_surat' cannot be null in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 21:50:01 --> Column 'tgl_surat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_3.jfif\', \'penting\', \'diss\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_3.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_3.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (:id_surat_masuk:, :kode_surat:, :no_surat:, :tgl_masuk:, :tgl_surat:, :pengirim:, :kepada:, :perihal:, :file:, :status:, :disposisi:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-30 21:50:03 --> mysqli_sql_exception: Column 'tgl_surat' cannot be null in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-30 21:50:03 --> Column 'tgl_surat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_4.jfif\', \'penting\', \'diss\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_4.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (\'SRMS-2022103194253\', \'GG\', \'382746\', \'2022-10-13\', NULL, \'fdsafdas\', \'fdsafdsa\', \'fdsafdsadfsa\', \'budybag4_4.jfif\', \'penting\', \'diss\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `surat_masuk` (`id_surat_masuk`, `kode_surat`, `no_surat`, `tgl_masuk`, `tgl_surat`, `pengirim`, `kepada`, `perihal`, `file`, `status`, `disposisi`, `operator`) VALUES (:id_surat_masuk:, :kode_surat:, :no_surat:, :tgl_masuk:, :tgl_surat:, :pengirim:, :kepada:, :perihal:, :file:, :status:, :disposisi:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(37): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(123): App\Models\MSekertaris->proses_tambah_surat_masuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-30 21:56:58 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CSekertaris.php(104): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\Suratmasuk')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_surat_masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

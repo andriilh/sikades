@@ -1,0 +1,400 @@
+ERROR - 2022-11-08 00:11:36 --> mysqli_sql_exception: Duplicate entry 'MSY-202211813911' for key 'PRIMARY' in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(169): App\Models\MSekertaris->proses_tambah_data_pengguna(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 00:11:36 --> Duplicate entry 'MSY-202211813911' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-202211813911\', \'dfsa\', \'dfsa\', \'Perempuan\', \'fdsa\', \'2022-11-14\', \'Protestan\', \'fdsafdsa\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-202211813911\', \'dfsa\', \'dfsa\', \'Perempuan\', \'fdsa\', \'2022-11-14\', \'Protestan\', \'fdsafdsa\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-202211813911\', \'dfsa\', \'dfsa\', \'Perempuan\', \'fdsa\', \'2022-11-14\', \'Protestan\', \'fdsafdsa\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (:id_masyarakat:, :nama_masyarakat:, :NIK:, :jenis_kelamin:, :tempat_lahir:, :tgl_lahir:, :agama:, :alamat:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(169): App\Models\MSekertaris->proses_tambah_data_pengguna([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 00:27:15 --> mysqli_sql_exception: Duplicate entry 'MSY-2022118132617' for key 'PRIMARY' in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(168): App\Models\MSekertaris->proses_tambah_data_pengguna(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 00:27:15 --> Duplicate entry 'MSY-2022118132617' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132617\', \'Hayati\', \'12345\', \'Perempuan\', \'Indramayu\', \'2022-11-17\', \'Islam\', \'Subang jabar\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132617\', \'Hayati\', \'12345\', \'Perempuan\', \'Indramayu\', \'2022-11-17\', \'Islam\', \'Subang jabar\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132617\', \'Hayati\', \'12345\', \'Perempuan\', \'Indramayu\', \'2022-11-17\', \'Islam\', \'Subang jabar\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (:id_masyarakat:, :nama_masyarakat:, :NIK:, :jenis_kelamin:, :tempat_lahir:, :tgl_lahir:, :agama:, :alamat:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(168): App\Models\MSekertaris->proses_tambah_data_pengguna([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 00:29:17 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CSekertaris.php(195): CodeIgniter\Model->__call('proses_tambah_pengajuan_saya', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 00:30:10 --> mysqli_sql_exception: Duplicate entry 'MSY-2022118132755' for key 'PRIMARY' in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(168): App\Models\MSekertaris->proses_tambah_data_pengguna(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 00:30:10 --> Duplicate entry 'MSY-2022118132755' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132755\', \'Yulia\', \'982369812\', \'Perempuan\', \'bandung 24\', \'2022-11-21\', \'Islam\', \'subang\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132755\', \'Yulia\', \'982369812\', \'Perempuan\', \'bandung 24\', \'2022-11-21\', \'Islam\', \'subang\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (\'MSY-2022118132755\', \'Yulia\', \'982369812\', \'Perempuan\', \'bandung 24\', \'2022-11-21\', \'Islam\', \'subang\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`id_masyarakat`, `nama_masyarakat`, `NIK`, `jenis_kelamin`, `tempat_lahir`, `tgl_lahir`, `agama`, `alamat`) VALUES (:id_masyarakat:, :nama_masyarakat:, :NIK:, :jenis_kelamin:, :tempat_lahir:, :tgl_lahir:, :agama:, :alamat:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(27): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(168): App\Models\MSekertaris->proses_tambah_data_pengguna([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 00:30:42 --> mysqli_sql_exception: Column 'id_pengajuan_surat' cannot be null in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(47): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CSekertaris.php(195): App\Models\MSekertaris->proses_tambah_pengajuan_saya(Array)
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 00:30:42 --> Column 'id_pengajuan_surat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pengajuan_surat` (`id_pengajuan_surat`, `NIK`, `id_surat`, `file`, `status`, `tipe_pengajuan`, `operator`) VALUES (NULL, \'23455234\', \'SR-20221021192120\', \'SS Yudis.pdf\', \'disetujui\', \'admin\', \'SK001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pengajuan_surat` (`id_pengajuan_surat`, `NIK`, `id_surat`, `file`, `status`, `tipe_pengajuan`, `operator`) VALUES (NULL, \'23455234\', \'SR-20221021192120\', \'SS Yudis.pdf\', \'disetujui\', \'admin\', \'SK001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pengajuan_surat` (`id_pengajuan_surat`, `NIK`, `id_surat`, `file`, `status`, `tipe_pengajuan`, `operator`) VALUES (NULL, \'23455234\', \'SR-20221021192120\', \'SS Yudis.pdf\', \'disetujui\', \'admin\', \'SK001\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengajuan_surat` (`id_pengajuan_surat`, `NIK`, `id_surat`, `file`, `status`, `tipe_pengajuan`, `operator`) VALUES (:id_pengajuan_surat:, :NIK:, :id_surat:, :file:, :status:, :tipe_pengajuan:, :operator:)', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(47): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\CSekertaris.php(195): App\Models\MSekertaris->proses_tambah_pengajuan_saya([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->tambah_data_pengajuan_saya()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 03:20:34 --> Undefined variable: idpengajuansaya
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php on line 115.
+ 1 APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idpengajuansaya', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php', 115, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_saya', [], true)
+ 5 APPPATH\Controllers\CUtama.php(259): view('dashboard/pages/admin/v_pengajuan_saya', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_saya_sekertaris()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 03:29:37 --> Undefined variable: datasurat
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php on line 162.
+ 1 APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php(162): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: datasurat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php', 162, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_saya', [], true)
+ 5 APPPATH\Controllers\CUtama.php(260): view('dashboard/pages/admin/v_pengajuan_saya', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_saya_sekertaris()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:59:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'admin'' at line 6 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(288): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(251): App\Models\MSekertaris->tampilkan_data_pengajuan_saya()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_saya_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 06:59:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'admin'' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'menunggu\'
+AND `tipe_pengajuan` `=` = \'admin\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'menunggu\'
+AND `tipe_pengajuan` `=` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'menunggu\'
+AND `tipe_pengajuan` `=` = \'admin\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != :status:
+AND `tipe_pengajuan` `=` = :tipe_pengajuan =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(288): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(251): App\Models\MSekertaris->tampilkan_data_pengajuan_saya()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_saya_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 07:00:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 6 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 07:00:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan` `=` = \'mandiri\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan` `=` = \'mandiri\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan` `=` = \'mandiri\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != :status:
+AND `tipe_pengajuan` `=` = :tipe_pengajuan =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 07:00:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tipe_pengajuan` = =:' at line 6 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 07:00:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:tipe_pengajuan` = =:' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan == =` `:tipe_pengajuan` = =:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan == =` `:tipe_pengajuan` = =:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != \'disetujui2\'
+AND `tipe_pengajuan == =` `:tipe_pengajuan` = =:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `status` != :status:
+AND `tipe_pengajuan == =` `:tipe_pengajuan` = =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 07:00:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 07:00:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = :tipe_pengajuan =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 07:00:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 07:00:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = :tipe_pengajuan =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(277): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 07:05:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5 in C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIKADES4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIKADES4\app\Models\MSekertaris.php(276): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIKADES4\app\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+#6 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+#7 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+#8 C:\xampp\htdocs\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 07:05:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`=` = 'mandiri'' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = \'mandiri\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pengajuan_surat`
+JOIN `masyarakat` ON `masyarakat`.`NIK`=`pengajuan_surat`.`NIK`
+JOIN `surat` ON `surat`.`id_surat`=`pengajuan_surat`.`id_surat`
+WHERE `tipe_pengajuan` `=` = :tipe_pengajuan =:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(276): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CUtama.php(217): App\Models\MSekertaris->tampilkan_data_pengajuan_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 07:17:29 --> Undefined variable: idpengajuansaya
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php on line 114.
+ 1 APPPATH\Views\dashboard\pages\admin\v_pengajuan_saya.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idpengajuansaya', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php', 114, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_saya.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_saya', [], true)
+ 5 APPPATH\Controllers\CSekertaris.php(576): view('dashboard/pages/admin/v_pengajuan_saya', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->cari_data_pengajuan_saya()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

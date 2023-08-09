@@ -1,0 +1,16 @@
+CRITICAL - 2022-10-17 04:19:43 --> Undefined variable: cek
+in APPPATH\Controllers\CLogin.php on line 25.
+ 1 APPPATH\Controllers\CLogin.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cek', 'APPPATH\\Controllers\\CLogin.php', 25, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->cek_login_control()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 22:34:16 --> Invalid file: dashboard/pages/lurah/home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/pages/lurah/home.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/lurah/home', [], true)
+ 3 APPPATH\Controllers\CLogin.php(57): view('dashboard/pages/lurah/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->cek_login_control()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

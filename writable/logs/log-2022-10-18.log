@@ -1,0 +1,43 @@
+CRITICAL - 2022-10-18 04:16:53 --> Undefined variable: id_jurusan
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 54.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_jurusan', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(26): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 06:06:13 --> Undefined variable: id_fakultas
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 53.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_fakultas', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 53, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(27): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:10:30 --> Undefined variable: data_fakultas
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_pengguna.php on line 98.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_pengguna.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_fakultas', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_pengguna.php', 98, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_pengguna.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_pengguna', [], true)
+ 5 APPPATH\Controllers\CUtama.php(61): view('dashboard/pages/admin/v_kelola_data_pengguna', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_pengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 09:10:58 --> Invalid file: layout/admin/template.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/admin/template.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/admin/template', [], true)
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_pengguna', [], true)
+ 4 APPPATH\Controllers\CUtama.php(61): view('dashboard/pages/admin/v_kelola_data_pengguna', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_pengguna()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

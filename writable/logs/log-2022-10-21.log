@@ -1,0 +1,83 @@
+CRITICAL - 2022-10-21 03:55:02 --> Undefined variable: data_surat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 39.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_surat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(50): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 03:56:21 --> Undefined variable: data_surat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 39.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_surat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(51): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 03:56:25 --> Undefined variable: data_surat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 39.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_surat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(51): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 04:10:06 --> Undefined property: App\Controllers\CUtama::$id
+in APPPATH\Controllers\CUtama.php on line 51.
+ 1 APPPATH\Controllers\CUtama.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\CUtama::$id', 'APPPATH\\Controllers\\CUtama.php', 51, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 05:08:46 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CSekertaris.php(42): CodeIgniter\Model->__call('proses_ubah_data_surat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_data_surat()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 05:08:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 872.
+ 1 SYSTEMPATH\Model.php(586): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(763): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\CSekertaris.php(42): CodeIgniter\Model->__call('proses_ubah_data_surat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_data_surat()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 06:59:31 --> Undefined property: App\Controllers\CSekertaris::$id
+in APPPATH\Controllers\CSekertaris.php on line 67.
+ 1 APPPATH\Controllers\CSekertaris.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\CSekertaris::$id', 'APPPATH\\Controllers\\CSekertaris.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->cari_data_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 07:00:06 --> Undefined variable: idsurat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php on line 78.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_surat.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idsurat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_surat', [], true)
+ 5 APPPATH\Controllers\CSekertaris.php(69): view('dashboard/pages/admin/v_kelola_data_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->cari_data_surat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 07:18:44 --> Undefined property: App\Controllers\CSekertaris::$id
+in APPPATH\Controllers\CSekertaris.php on line 67.
+ 1 APPPATH\Controllers\CSekertaris.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\CSekertaris::$id', 'APPPATH\\Controllers\\CSekertaris.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->cari_data_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

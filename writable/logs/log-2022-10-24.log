@@ -1,0 +1,22 @@
+CRITICAL - 2022-10-24 23:55:45 --> Undefined index: id_surat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_syarat.php on line 47.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_syarat.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_surat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_syarat.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_syarat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_syarat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(83): view('dashboard/pages/admin/v_kelola_data_syarat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_syarat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-24 23:57:00 --> Undefined index: nama_surat
+in APPPATH\Views\dashboard\pages\admin\v_kelola_data_syarat.php on line 47.
+ 1 APPPATH\Views\dashboard\pages\admin\v_kelola_data_syarat.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_surat', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_syarat.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_kelola_data_syarat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_kelola_data_syarat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(83): view('dashboard/pages/admin/v_kelola_data_syarat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_kelola_data_syarat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

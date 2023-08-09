@@ -1,0 +1,45 @@
+CRITICAL - 2022-10-16 04:06:39 --> Invalid file: dashboard/admin/home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/admin/home.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/admin/home', [], true)
+ 3 APPPATH\Controllers\CUtama.php(19): view('dashboard/admin/home')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_dashboard_admin()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 04:07:05 --> Undefined variable: judul_bar
+in APPPATH\Views\dashboard\layout\admin\template.php on line 7.
+ 1 APPPATH\Views\dashboard\layout\admin\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: judul_bar', 'APPPATH\\Views\\dashboard\\layout\\admin\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\admin\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/admin/template', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/home', [], true)
+ 6 APPPATH\Controllers\CUtama.php(19): view('dashboard/pages/admin/home')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_dashboard_admin()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 04:08:00 --> Undefined variable: judul_bar
+in APPPATH\Views\dashboard\layout\admin\template.php on line 7.
+ 1 APPPATH\Views\dashboard\layout\admin\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: judul_bar', 'APPPATH\\Views\\dashboard\\layout\\admin\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\admin\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/admin/template', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/home', [], true)
+ 6 APPPATH\Controllers\CUtama.php(23): view('dashboard/pages/admin/home')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_dashboard_admin()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-16 04:08:10 --> Undefined variable: judul_bar
+in APPPATH\Views\dashboard\layout\admin\template.php on line 7.
+ 1 APPPATH\Views\dashboard\layout\admin\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: judul_bar', 'APPPATH\\Views\\dashboard\\layout\\admin\\template.php', 7, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\layout\\admin\\template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('dashboard/layout/admin/template', [], true)
+ 5 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/home', [], true)
+ 6 APPPATH\Controllers\CUtama.php(23): view('dashboard/pages/admin/home')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_dashboard_admin()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

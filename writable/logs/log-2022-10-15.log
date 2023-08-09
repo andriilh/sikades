@@ -1,0 +1,11 @@
+CRITICAL - 2022-10-15 07:06:08 --> Undefined variable: base_url
+in APPPATH\Views\profile\index.php on line 13.
+ 1 APPPATH\Views\profile\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: base_url', 'APPPATH\\Views\\profile\\index.php', 13, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profile\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('profile/index', [], true)
+ 5 APPPATH\Controllers\CUtama.php(9): view('profile/index')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,33 @@
+CRITICAL - 2022-10-29 02:36:05 --> Undefined index: nama_sekertaris
+in APPPATH\Views\dashboard\pages\admin\v_ubah_profile.php on line 14.
+ 1 APPPATH\Views\dashboard\pages\admin\v_ubah_profile.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_sekertaris', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_ubah_profile.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_ubah_profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_ubah_profile', [], true)
+ 5 APPPATH\Controllers\CUtama.php(167): view('dashboard/pages/admin/v_ubah_profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_ubah_profile_sekertaris()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-29 02:36:43 --> Undefined index: nama_sekertaris
+in APPPATH\Views\dashboard\pages\admin\v_ubah_profile.php on line 14.
+ 1 APPPATH\Views\dashboard\pages\admin\v_ubah_profile.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_sekertaris', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_ubah_profile.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_ubah_profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_ubah_profile', [], true)
+ 5 APPPATH\Controllers\CUtama.php(167): view('dashboard/pages/admin/v_ubah_profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_ubah_profile_sekertaris()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-29 04:13:05 --> Undefined variable: idpengguna
+in APPPATH\Views\dashboard\pages\admin\v_surat_masuk.php on line 82.
+ 1 APPPATH\Views\dashboard\pages\admin\v_surat_masuk.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: idpengguna', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_surat_masuk', [], true)
+ 5 APPPATH\Controllers\CUtama.php(119): view('dashboard/pages/admin/v_surat_masuk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_surat_masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

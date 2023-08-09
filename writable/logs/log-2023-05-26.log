@@ -1,0 +1,52 @@
+CRITICAL - 2023-05-26 10:36:11 --> syntax error, unexpected '<'
+in APPPATH\Controllers\CSekertaris.php on line 647.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CSekertaris.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CSekertaris')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CSekertaris')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\CSekertaris')
+ 5 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\CSekertaris', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 10:37:14 --> Undefined variable: dompPdf
+in APPPATH\Controllers\CSekertaris.php on line 660.
+ 1 APPPATH\Controllers\CSekertaris.php(660): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompPdf', 'APPPATH\\Controllers\\CSekertaris.php', 660, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->printpdf_surat_masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 10:37:40 --> syntax error, unexpected '>'
+in APPPATH\Controllers\CSekertaris.php on line 668.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CSekertaris.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CSekertaris')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CSekertaris')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\CSekertaris')
+ 5 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\CSekertaris', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 10:54:40 --> Cannot redeclare App\Models\MSekertaris::tampilkan_data_surat_masuk()
+in APPPATH\Models\MSekertaris.php on line 69.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-26 10:55:18 --> Undefined index: nama_sekertaris
+in APPPATH\Views\dashboard\pages\admin\v_surat_masuk_download_pdf.php on line 61.
+ 1 APPPATH\Views\dashboard\pages\admin\v_surat_masuk_download_pdf.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_sekertaris', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk_download_pdf.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk_download_pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_surat_masuk_download_pdf', [], true)
+ 5 APPPATH\Controllers\CSekertaris.php(656): view('dashboard/pages/admin/v_surat_masuk_download_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->printpdf_surat_masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-26 10:57:25 --> Undefined index: aksi
+in APPPATH\Views\dashboard\pages\admin\v_surat_masuk_download_pdf.php on line 62.
+ 1 APPPATH\Views\dashboard\pages\admin\v_surat_masuk_download_pdf.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: aksi', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk_download_pdf.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_surat_masuk_download_pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_surat_masuk_download_pdf', [], true)
+ 5 APPPATH\Controllers\CSekertaris.php(656): view('dashboard/pages/admin/v_surat_masuk_download_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->printpdf_surat_masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
