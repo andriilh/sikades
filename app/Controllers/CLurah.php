@@ -128,9 +128,19 @@ class CLurah extends BaseController
 
     public function ubah_pengajuan_surat_lurah()
     {
+        $file = $this->request->getFile('file');
         $data = [
-            'status'  => $this->request->getPost('status')
+            'status'  => $this->request->getPost('status'),
+            'keterangan' => $this->request->getPost('keterangan')
         ];
+
+        if ($file) {
+            $file->move('public/Pengajuansurat/Masyarakat');
+            $addFileSurat = [
+                'file_surat'    => $file->getName()
+            ];
+            $data = array_merge($data, $addFileSurat);
+        }
 
         $ubahPengajuanSurat = $this->mLurah->proses_ubah_pengajuan_surat($data, $this->request->getPost('id_pengajuan_surat'));
 

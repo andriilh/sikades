@@ -66,7 +66,7 @@
                                     </span>
 
                                 <?php elseif ($row['status'] == 'ditolak') : ?>
-                                    <span class="btn btn-danger" style="color: white; font-weight: bold;" title="Ditolak">
+                                    <span class="btn btn-danger btn-tolak" style="color: white; font-weight: bold;" title="Ditolak" data-keterangan="<?= $row['keterangan']; ?>">
                                         <i class="fa-solid fa-xmark"></i>
                                     </span>
                                 <?php endif; ?>
@@ -124,6 +124,7 @@
                             <?php foreach ($datasurat as $row) : ?>
                                 <option value="<?= $row['id_surat']; ?>"><?= $row['nama_surat']; ?></option>
                             <?php endforeach; ?>
+                            <option>Lainnya...</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -148,6 +149,23 @@
 </form>
 <!-- End Form Tambah -->
 
+<div class="modal fade" id="modalKeterangan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Alasan Penolakan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="keterangan"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript">
     setTimeout(function() {
         // Closing the alert
@@ -165,22 +183,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function() {
-        $('#example').DataTable();
-    });
-</script>
-
-<script>
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function() {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-</script>
-
-<script>
-    const filterContainer = $("#filter-container");
-    const clearButton = `<button type="button" class="btn btn-default mr-2" onclick="location.href='<?= base_url() ?>/CUtama/link_pengajuan_surat_masyarakat'">Semua</button>`;
+    const baseUrl = '<?= base_url() ?>';
     const alphabet = [{
             name: "A",
             active: false,
@@ -312,159 +315,10 @@
             disabled: true
         },
     ];
-
-    const filterButton = () => {
-        alphabet.forEach((a, index) => {
-            filterContainer.append(`<button class="btn btn-filter ${(!a.disabled && !a.active) ? 'btn-default' : ''} ${a.active && !a.disabled ? 'btn-primary': ''}" data-name="${a.name}" data-index="${index}" ${a.disabled ? "disabled": ""}>${a.name}</button>`)
-        });
-    }
-
-    // get perihal data from db
-    $.ajax({
-        url: '<?php echo base_url(); ?>/pengajuan_surat/nama?type=user',
-        beforeSend: function() {
-            filterContainer.append(clearButton);
-            filterButton();
-        },
-        success: function(response) {
-            filterContainer.empty();
-            filterContainer.append(clearButton);
-            // for all alphabet that contain 'perihal' set disabled to false 
-            alphabet.forEach(al => {
-                response.forEach(res => {
-                    if (res.name.charAt(0).toUpperCase() === al.name) {
-                        al.disabled = false
-                    }
-                })
-            })
-
-            // get filter data from url
-            var filter = window.location.search.substring(1).split('=')[1];
-
-            // set button to active when selected
-            alphabet.forEach((element) => {
-                element.active = true
-                if (element.name !== filter) {
-                    element.active = false;
-                } else if (filter === undefined) {
-                    element.active = false
-                }
-            });
-
-            // render all filter button
-            filterButton();
-
-            $(document).on("click", ".btn-filter", function() {
-                const name = $(this).attr("data-name");
-                const index = $(this).attr("data-index");
-                alphabet[index].active = true;
-                alphabet.forEach((element) => {
-                    if (element.name !== name) {
-                        element.active = false;
-                    }
-                });
-                location.href = `<?= base_url() ?>/CUtama/link_pengajuan_surat_masyarakat?filter=${name}`
-            })
-        }
-    });
-
-    const flashData = $('.flash-data').data('flashdata');
-    if (flashData) {
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Pengajuan berhasil ditambahkan',
-            title: 'Ditambahkan',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    const flashData2 = $('.flash-data2').data('flashdata');
-    if (flashData2) {
-
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Pengajuan berhasil dihapus',
-            title: 'Dihapus',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    const flashData3 = $('.flash-data3').data('flashdata');
-    if (flashData3) {
-
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Pengajuan berhasil diubah',
-            title: 'Diubah',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    const flashData4 = $('.flash-data4').data('flashdata');
-    if (flashData4) {
-
-        Swal.fire({
-            position: 'center',
-            icon: 'warning',
-            text: 'Maaf, data yang anda cari tidak ditemukan!',
-            title: 'Data tidak ditemukan',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    $(document).on('click', '.btn-hapus2', function(e) {
-        e.preventDefault();
-        const href = $(this).attr('href');
-        console.log(href);
-        Swal.fire({
-            position: 'center',
-            title: 'Yakin ingin menghapus?',
-            text: 'Data yang dihapus tidak bisa dikembalikan',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#d33',
-            cancelButtonColor: '#21756E',
-            confirmButtonText: 'Ya, Hapus'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                document.location.href = href;
-            }
-        })
-
-    });
-
-
-
-    $(document).ready(function() {
-
-        // get Edit Gejala
-        $('#example').on('click', '.btn-edit', function() {
-            // get data from button edit
-            const id = $(this).data('id');
-            const nama = $(this).data('nama');
-            const keterangan = $(this).data('keterangan');
-
-            // Set data to Form Edit
-            $('.id_surat_edit').val(id);
-            $('.nama_surat_edit').val(nama);
-            $('.keterangan_surat_edit').val(keterangan);
-            // Call Modal Edit
-            $('#editModal').modal('show');
-
-
-        });
-
-
-    });
 </script>
+<!-- All of javascript logic in this page are in this file -->
+<script src="<?= base_url('/public/assets/js/user/pengajuanSurat.js') ?>"></script>
+
+
 
 <?= $this->endSection(); ?>

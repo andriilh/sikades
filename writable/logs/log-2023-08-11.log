@@ -1,0 +1,97 @@
+CRITICAL - 2023-08-11 21:51:07 --> Call to undefined function link_tag()
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_surat.php on line 161.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_surat', [], true)
+ 4 APPPATH\Controllers\CUtama.php(337): view('dashboard/pages/admin/v_pengajuan_surat', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 21:51:42 --> Call to undefined function link_tag()
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_surat.php on line 161.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_surat', [], true)
+ 4 APPPATH\Controllers\CUtama.php(337): view('dashboard/pages/admin/v_pengajuan_surat', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 22:24:45 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CSekertaris.php(614): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\Pengajuansurat\\Masyarakat')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 22:34:56 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CSekertaris.php(614): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\Pengajuansurat\\Masyarakat')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 22:41:16 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\CSekertaris.php(614): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\Pengajuansurat\\Masyarakat')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-11 22:46:18 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pengaju...', 0)
+#1 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pengaju...')
+#2 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pengaju...')
+#3 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `pengaju...', Array, false)
+#4 C:\laragon\www\Belajar\SIKADES4\app\Models\MSekertaris.php(391): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\laragon\www\Belajar\SIKADES4\app\Controllers\CSekertaris.php(625): App\Models\MSekertaris->proses_ubah_pengajuan_surat(Array, 'SRPJ-2023712253...')
+#6 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+#7 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+#8 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Belajar\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-11 22:46:18 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pengajuan_surat` SET `status` = \'ditolak\', `acc_admin` = \'SK001\', `file_surat` = \'\', `keterangan` = \'asdasd\'
+WHERE `id_pengajuan_surat` = \'SRPJ-20237122537\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pengajuan_surat` SET `status` = \'ditolak\', `acc_admin` = \'SK001\', `file_surat` = \'\', `keterangan` = \'asdasd\'
+WHERE `id_pengajuan_surat` = \'SRPJ-20237122537\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pengajuan_surat` SET `status` = \'ditolak\', `acc_admin` = \'SK001\', `file_surat` = \'\', `keterangan` = \'asdasd\'
+WHERE `id_pengajuan_surat` = \'SRPJ-20237122537\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `pengajuan_surat` SET `status` = :status:, `acc_admin` = :acc_admin:, `file_surat` = :file_surat:, `keterangan` = :keterangan:
+WHERE `id_pengajuan_surat` = :id_pengajuan_surat:', [...], false)
+ 5 APPPATH\Models\MSekertaris.php(391): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\CSekertaris.php(625): App\Models\MSekertaris->proses_ubah_pengajuan_surat([...], 'SRPJ-20237122537')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 23:04:11 --> Undefined variable $addFileSurat
+in APPPATH\Controllers\CSekertaris.php on line 626.
+ 1 APPPATH\Controllers\CSekertaris.php(626): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $addFileSurat', 'APPPATH\\Controllers\\CSekertaris.php', 626)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 23:21:15 --> Array to string conversion
+in APPPATH\Views\dashboard\pages\admin\v_pengajuan_surat.php on line 70.
+ 1 APPPATH\Views\dashboard\pages\admin\v_pengajuan_surat.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_surat.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\admin\\v_pengajuan_surat.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/admin/v_pengajuan_surat', [], true)
+ 5 APPPATH\Controllers\CUtama.php(337): view('dashboard/pages/admin/v_pengajuan_surat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_sekertaris()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-11 23:23:23 --> Call to a member function getName() on null
+in APPPATH\Controllers\CSekertaris.php on line 613.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->ubah_pengajuan_surat_sekertaris()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

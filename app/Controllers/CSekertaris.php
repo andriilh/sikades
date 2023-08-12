@@ -6,6 +6,8 @@ use App\Models\MSekertaris;
 use CodeIgniter\I18n\Time;
 use Dompdf\Dompdf;
 
+use function PHPUnit\Framework\isEmpty;
+
 class CSekertaris extends BaseController
 {
     public $mSekertaris;
@@ -610,16 +612,20 @@ class CSekertaris extends BaseController
     public function ubah_pengajuan_surat_sekertaris()
     {
         $file = $this->request->getFile('file');
-        if ($file !== null) {
-            $file->move('public/Pengajuansurat/Masyarakat');
-            $namafile = $file->getName();
-        }
-
         $data = [
             'status'    => $this->request->getPost('status'),
             'acc_admin' => session()->get('id_user'),
-            'file_surat' => $namafile
+            'keterangan' => $this->request->getPost('keterangan')
         ];
+
+        if ($file) {
+            $file->move('public/Pengajuansurat/Masyarakat');
+            $addFileSurat = [
+                'file_surat'    => $file->getName()
+            ];
+            $data = array_merge($data, $addFileSurat);
+        }
+
 
         $ubahPengajuanSurat = $this->mSekertaris->proses_ubah_pengajuan_surat($data, $this->request->getPost('id_pengajuan_surat'));
 
@@ -634,9 +640,18 @@ class CSekertaris extends BaseController
 
     public function ubah_pengajuan_saya_sekertaris()
     {
+        $file = $this->request->getFile('file');
         $data = [
-            'status'  => $this->request->getPost('status')
+            'status'  => $this->request->getPost('status'),
+            'keterangan' => $this->request->getPost('keterangan')
         ];
+        if ($file) {
+            $file->move('public/Pengajuansurat/Masyarakat');
+            $addFileSurat = [
+                'file_surat'    => $file->getName()
+            ];
+            $data = array_merge($data, $addFileSurat);
+        }
 
         $ubahPengajuanSaya = $this->mSekertaris->proses_ubah_pengajuan_saya($data, $this->request->getPost('id_pengajuan_surat'));
 
