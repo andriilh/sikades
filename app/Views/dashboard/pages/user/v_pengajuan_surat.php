@@ -76,6 +76,12 @@
                                 if ($row['acc_admin'] != "") { ?>
                                     <a href="https:wa.me/<?= $row['no_hp']; ?>?text=Hallo,%20mohon%20maaf%20ingin%20menanyakan%20apakah%20surat%20dengan%20ID%20<?= $row['id_pengajuan_surat']; ?>%20sudah%20bisa%20di%20ambil?" class="btn btn-success btn-lihat" title="Kontak"><i class="fa-brands fa-whatsapp"></i></a>
                                 <?php } ?>
+                                <?php
+                                if ($row['file_surat'] != "") { ?>
+                                    <a href="<?= base_url(); ?>/public/Pengajuansurat/<?= $row['file_surat']; ?>" class="btn btn-primary" title="Unduh" download><i class="fa-solid fas fa-download"></i></a>
+                                <?php } ?>
+
+
 
                                 <a href="<?= base_url(); ?>/CMasyarakat/hapus_pengajuan_masyarakat/<?= $row['id_pengajuan_surat']; ?>" title="Hapus" class="btn btn-danger btn-hapus2"><i class="fa-solid fa-trash"></i></a>
 
@@ -441,7 +447,7 @@
     $(document).ready(function() {
 
         // get Edit Gejala
-        $('.btn-edit').on('click', function() {
+        $('#example').on('click', '.btn-edit', function() {
             // get data from button edit
             const id = $(this).data('id');
             const nama = $(this).data('nama');

@@ -52,7 +52,7 @@ $routes->get('/CUtama/link_kelola_data_syarat', 'Cutama::link_kelola_data_syarat
 $routes->get('/CUtama/link_kelola_data_pengguna', 'Cutama::link_kelola_data_pengguna');
 $routes->get('/CUtama/link_konfrimasi_registrasi', 'Cutama::link_konfrimasi_registrasi');
 $routes->get('/CUtama/link_surat_masuk', 'Cutama::link_surat_masuk', ["filter"]);
-$routes->get('/surat/perihal', 'Cutama::perihal_surat',["type"]);
+$routes->get('/surat/perihal', 'Cutama::perihal_surat', ["type"]);
 $routes->get('/CUtama/link_surat_keluar', 'Cutama::link_surat_keluar', ["filter"]);
 $routes->get('/CUtama/link_pengajuan_surat_sekertaris', 'Cutama::link_pengajuan_surat_sekertaris', ['filter']);
 $routes->get('/pengajuan_surat/nama', 'Cutama::get_nama_pengajuan_surat', ['type']);

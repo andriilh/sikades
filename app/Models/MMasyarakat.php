@@ -18,27 +18,26 @@ class MMasyarakat extends Model
     {
         if ($filter === null) {
             return $this->db->table('pengajuan_surat')
-                ->join('masyarakat', 'masyarakat.NIK=pengajuan_surat.NIK')
                 ->join('surat', 'surat.id_surat=pengajuan_surat.id_surat')
                 ->join('sekertaris', 'sekertaris.id_sekertaris=pengajuan_surat.acc_admin', 'left')
-                ->where('masyarakat.NIK', $id)
+                ->where('pengajuan_surat.NIK', $id)
                 ->get()->getResultArray();
         } else {
             return $this->db->query("SELECT * FROM pengajuan_surat
-            JOIN masyarakat ON masyarakat.NIK = pengajuan_surat.NIK
             JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
             LEFT JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
-            WHERE masyarakat.NIK = '".$id."'
+            WHERE pengajuan_surat.NIK = '" . $id . "'
             AND nama_surat LIKE '" . $filter . "%'")->getResultArray();
         }
     }
 
-    public function tampilkan_nama_pengajuan_surat($id) {
+    public function tampilkan_nama_pengajuan_surat($id)
+    {
         return $this->db->query("SELECT nama_surat AS name FROM pengajuan_surat
         JOIN masyarakat ON masyarakat.NIK = pengajuan_surat.NIK
         JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
         JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
-        WHERE masyarakat.NIK = '".$id."'")->getResultObject();
+        WHERE masyarakat.NIK = '" . $id . "'")->getResultObject();
     }
 
     public function tampilkan_data_surat()

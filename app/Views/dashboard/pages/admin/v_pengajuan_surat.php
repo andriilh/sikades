@@ -84,7 +84,7 @@
 
 
 <!-- Form Ubah Surat -->
-<form action="<?= base_url(); ?>/CSekertaris/ubah_pengajuan_surat_sekertaris" method="post">
+<form action="<?= base_url(); ?>/CSekertaris/ubah_pengajuan_surat_sekertaris" method="post" enctype="multipart/form-data">
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -123,6 +123,11 @@
                             <option value="diproses">Diproses</option>
                             <option value="selesai">Selesai</option>
                         </select>
+                    </div>
+
+                    <div class="form-group d-none" id="file-surat">
+                        <label for="input-file-surat" class="form-label">Unggah Surat</label>
+                        <input type="file" class="form-control" id="input-file-surat" name="file">
                     </div>
 
                 </div>
@@ -287,7 +292,7 @@
             disabled: true
         },
     ];
-    
+
     const filterButton = () => {
         alphabet.forEach((a, index) => {
             filterContainer.append(`<button class="btn btn-filter ${(!a.disabled && !a.active) ? 'btn-default' : ''} ${a.active && !a.disabled ? 'btn-success': ''}" data-name="${a.name}" data-index="${index}" ${a.disabled ? "disabled": ""}>${a.name}</button>`)
@@ -420,17 +425,17 @@
 
 
     $(document).ready(function() {
-
-
-        $('.btn-edit').on('click', function() {
+        $('#example').on('click', '.btn-edit', function() {
             // get data from button edit
             const id = $(this).data('id');
             const nik = $(this).data('nik');
             const nama = $(this).data('nama');
             const surat = $(this).data('surat');
             const status = $(this).data('status');
-
-
+            const fileSurat = $('#file-surat');
+            if (status === "diproses") {
+                fileSurat.removeClass('d-none');
+            }
             // Set data to Form Edit
             $('.id_pengajuan_surat').val(id);
             $('.nik').val(nik);
@@ -439,9 +444,16 @@
             $('.status').val(status);
             // Call Modal Edit
             $('#editModal').modal('show');
-        });
 
-
+            $('.status').on('change', function() {
+                let status2 = $(this).val();
+                if (status2 === 'diproses' || status2 === "selesai") {
+                    fileSurat.removeClass('d-none');
+                } else {
+                    fileSurat.addClass('d-none');
+                }
+            })
+        })
     });
 </script>
 

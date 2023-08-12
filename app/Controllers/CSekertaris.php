@@ -609,9 +609,16 @@ class CSekertaris extends BaseController
 
     public function ubah_pengajuan_surat_sekertaris()
     {
+        $file = $this->request->getFile('file');
+        if ($file !== null) {
+            $file->move('public/Pengajuansurat/Masyarakat');
+            $namafile = $file->getName();
+        }
+
         $data = [
             'status'    => $this->request->getPost('status'),
-            'acc_admin' => session()->get('id_user')
+            'acc_admin' => session()->get('id_user'),
+            'file_surat' => $namafile
         ];
 
         $ubahPengajuanSurat = $this->mSekertaris->proses_ubah_pengajuan_surat($data, $this->request->getPost('id_pengajuan_surat'));
