@@ -27,6 +27,39 @@
         </div>
         <!-- /.row -->
 
+        <div class="row">
+            <div class="col-lg-4 col-3">
+                <h3>Syarat Pengajuan Surat</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <?php
+                        $count = 0;
+                        foreach ($persyaratan as $p) {
+                            $count += 1;
+                        ?>
+                            <div class="card-header" id="<?= 'heading-' . $count ?>">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#<?= 'collapse' . $count ?>" aria-expanded="false" aria-controls="<?= 'collapse' . $count ?>">
+                                        <?= $p['nama_surat']; ?>
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="<?= 'collapse' . $count ?>" class="collapse" aria-labelledby="<?= 'heading-' . $count ?>" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Syarat untuk mengajukan <?= $p['keterangan_surat'] ?> adalah:
+                                    <ul>
+                                        <li><?= $p['nama_syarat']; ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div><!-- /.container-fluid -->
 </section>
 

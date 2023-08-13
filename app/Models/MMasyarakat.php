@@ -90,4 +90,13 @@ class MMasyarakat extends Model
             ->where('pengajuan_surat.tipe_pengajuan', 'mandiri')
             ->get()->getResultArray();
     }
+
+    public function tampilkan_data_persyaratan()
+    {
+        return $this->db->table('syarat_surat')
+            ->join('surat', 'surat.id_surat=syarat_surat.id_surat')
+            ->join('syarat', 'syarat.id_syarat=syarat_surat.id_syarat')
+            ->orderBy('surat.nama_surat')
+            ->get()->getResultArray();
+    }
 }

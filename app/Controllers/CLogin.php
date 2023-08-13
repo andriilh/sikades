@@ -152,12 +152,18 @@ class CLogin extends BaseController
                         session()->set('total_pengajuan', $cektotalpengajuansurat['total_pengajuan']);
 
                         $hometotalpengajuansurat = $this->mMasyarakat->home_getTotalPengajuanSurat($cekLoginMasyarakat['NIK']);
+                        $datapersyaratan = $this->mMasyarakat->tampilkan_data_persyaratan();
+
+                        // echo "<pre>";
+                        // print_r($datapersyaratan);
+                        // die();
 
                         $data = [
                             'judul_bar'               => 'SIKADES | Home',
                             'judul_halaman'           => 'Home',
                             'cektotalpengajuansurat'  => $cektotalpengajuansurat,
-                            'hometotalpengajuansurat' => $hometotalpengajuansurat
+                            'hometotalpengajuansurat' => $hometotalpengajuansurat,
+                            'persyaratan'             => $datapersyaratan
                         ];
 
                         return view('dashboard/pages/user/home', $data);

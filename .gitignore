@@ -18,6 +18,8 @@ public/Suratmasuk/*
 public/Pengajuansurat/*
 !public/Pengajuansurat/.gitkeep
 
+writable/debugbar/*
+!writable/debugbar/.gitkeep
 
 
 #codeigniter 3
