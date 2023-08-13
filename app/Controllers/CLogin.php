@@ -280,7 +280,7 @@ class CLogin extends BaseController
         // return $this->response->setJSON($password);
         if ($password == null) {
             $checkData = $this->mLogin->checkUser($this->request->getPost('username'));
-            if (!isEmpty($checkData)) {
+            if ($checkData == null) {
                 return $this->response->setStatusCode(400, 'Username ' . $this->request->getPost('username') . ' tidak terdaftar');
             } else {
                 return $this->response->setJSON($checkData);
