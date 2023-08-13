@@ -99,6 +99,7 @@ $routes->post('/CSekertaris/ubah_us_ps_sekertaris', 'CSekertaris::ubah_us_ps_sek
 $routes->post('/CLurah/ubah_us_ps_lurah', 'CLurah::ubah_us_ps_lurah');
 $routes->post('/CMasyarakat/ubah_us_ps_masyarakat', 'CMasyarakat::ubah_us_ps_masyarakat');
 $routes->post('/CSekertaris/cari_data_surat', 'CSekertaris::cari_data_surat');
+$routes->get('/surat/nomor', 'CSekertaris::no_surat', ["kode"]);
 
 $routes->post('/CSekertaris/cari_data_surat_masuk_sekertaris', 'CSekertaris::cari_data_surat_masuk_sekertaris');
 $routes->post('/CLurah/cari_data_surat_masuk_lurah', 'CLurah::cari_data_surat_masuk_lurah');

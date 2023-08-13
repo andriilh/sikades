@@ -177,3 +177,30 @@ WHERE `id_login` = :id_login:', [...], false)
  8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
  9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 04:08:45 --> Undefined array key "number"
+in APPPATH\Controllers\CSekertaris.php on line 712.
+ 1 APPPATH\Controllers\CSekertaris.php(712): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "number"', 'APPPATH\\Controllers\\CSekertaris.php', 712)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->no_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 04:08:53 --> Undefined array key "number"
+in APPPATH\Controllers\CSekertaris.php on line 712.
+ 1 APPPATH\Controllers\CSekertaris.php(712): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "number"', 'APPPATH\\Controllers\\CSekertaris.php', 712)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->no_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 04:10:52 --> Undefined array key "number"
+in APPPATH\Controllers\CSekertaris.php on line 712.
+ 1 APPPATH\Controllers\CSekertaris.php(712): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "number"', 'APPPATH\\Controllers\\CSekertaris.php', 712)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->no_surat()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 04:11:04 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\CSekertaris.php on line 712.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CSekertaris->no_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

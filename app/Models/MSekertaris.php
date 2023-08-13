@@ -362,8 +362,8 @@ class MSekertaris extends Model
             JOIN masyarakat ON masyarakat.NIK = pengajuan_surat.NIK 
             JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
             WHERE tipe_pengajuan = 'mandiri'
-            AND surat.nama_surat LIKE '".$filter."%'")
-            ->getResultArray();
+            AND surat.nama_surat LIKE '" . $filter . "%'")
+                ->getResultArray();
         }
     }
 
@@ -417,5 +417,11 @@ class MSekertaris extends Model
     {
         $query = $this->db->query("SELECT COUNT(id_pengajuan_surat) AS total_pengajuan_saya FROM pengajuan_surat WHERE tipe_pengajuan='admin'");
         return $query->getRowArray();
+    }
+
+    public function nomorSuratTerakhir($kode)
+    {
+        $query = $this->db->query("SELECT MAX(no_surat) AS 'number' FROM surat_keluar WHERE kode_surat = '" . $kode . "'");
+        return $query->getResult();
     }
 }

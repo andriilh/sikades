@@ -103,11 +103,17 @@
                                 </div>
                                 <div class="form-group col-md-3">
                                     <label for="kodesuratkeluar">Kode Surat</label>
-                                    <input type="text" class="form-control" id="kodesuratkeluar" name="kodesuratkeluar" required>
+                                    <input type="text" class="form-control text-uppercase" id="kodesuratkeluar" name="kodesuratkeluar" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="nosuratkeluar">No Surat</label>
                                     <input type="text" class="form-control" id="nosuratkeluar" name="nosuratkeluar" required>
+                                    <div class="form-check d-none" id="autoNumberContainer">
+                                        <input class="form-check-input" type="checkbox" id="autoNumber">
+                                        <label class="form-check-label" for="autoNumber">
+                                            Nomor Surat Terakhir
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -245,23 +251,7 @@
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function() {
-        $('#example').DataTable();
-    });
-</script>
-
-
-<script>
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function() {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-</script>
-<script>
-    const filterContainer = $("#filter-container");
-    const clearButton =
-        `<button type="button" class="btn btn-default mr-2" onclick="location.href='<?= base_url() ?>/CUtama/link_surat_keluar'">Semua</button>`;
+    const baseUrl = '<?= base_url() ?>'
     const alphabet = [{
             name: "A",
             active: false,
@@ -393,174 +383,10 @@
             disabled: true
         },
     ];
-
-    const filterButton = () => {
-        alphabet.forEach((a, index) => {
-            filterContainer.append(`<button class="btn btn-filter ${(!a.disabled && !a.active) ? 'btn-default' : ''} ${a.active && !a.disabled ? 'btn-danger': ''}" data-name="${a.name}" data-index="${index}" ${a.disabled ? "disabled": ""}>${a.name}</button>`)
-        });
-    }
-
-    // get perihal data from db
-    $.ajax({
-        url: '<?php echo base_url(); ?>/surat/perihal?type=keluar',
-        beforeSend: function() {
-            filterContainer.append(clearButton)
-            filterButton()
-        },
-        success: function(response) {
-            filterContainer.empty();
-            filterContainer.append(clearButton);
-            // for all alphabet that contain 'perihal' set disabled to false 
-            alphabet.forEach(al => {
-                response.forEach(res => {
-                    if (res.name.charAt(0).toUpperCase() === al.name) {
-                        al.disabled = false
-                    }
-                })
-            })
-
-            // get filter data from url
-            var filter = window.location.search.substring(1).split('=')[1];
-
-            // set button to active when selected
-            alphabet.forEach((element) => {
-                element.active = true
-                if (element.name !== filter) {
-                    element.active = false;
-                } else if (filter === undefined) {
-                    element.active = false
-                }
-            });
-
-            // render all filter button
-            filterButton();
-
-            $(document).on("click", ".btn-filter", function() {
-                const name = $(this).attr("data-name");
-                const index = $(this).attr("data-index");
-                alphabet[index].active = true;
-                alphabet.forEach((element) => {
-                    if (element.name !== name) {
-                        element.active = false;
-                    }
-                });
-                location.href = `<?= base_url() ?>/CUtama/link_surat_keluar?filter=${name}`
-            })
-        }
-    });
-
-    const flashData = $('.flash-data').data('flashdata');
-    if (flashData) {
-
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Surat Keluar berhasil ditambahkan',
-            title: 'Ditambahkan',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    const flashData2 = $('.flash-data2').data('flashdata');
-    if (flashData2) {
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Surat Keluar berhasil dihapus',
-            title: 'Dihapus',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    const flashData3 = $('.flash-data3').data('flashdata');
-    if (flashData3) {
-
-
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            text: 'Data Surat Keluar berhasil diubah',
-            title: 'Diubah',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-
-    const flashData4 = $('.flash-data4').data('flashdata');
-    if (flashData4) {
-
-        Swal.fire({
-            position: 'center',
-            icon: 'warning',
-            text: 'Maaf, data yang anda cari tidak ditemukan!',
-            title: 'Data tidak ditemukan',
-            showConfirmButton: false,
-            timer: 2000
-        })
-    }
-
-    $(document).on('click', '.btn-hapus2', function(e) {
-        e.preventDefault();
-        const href = $(this).attr('href');
-        console.log(href);
-        Swal.fire({
-            position: 'center',
-            title: 'Yakin ingin menghapus?',
-            text: 'Data yang dihapus tidak bisa dikembalikan',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#d33',
-            cancelButtonColor: '#21756E',
-            confirmButtonText: 'Ya, Hapus'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                document.location.href = href;
-            }
-        })
-
-    });
-
-
-
-
-    $(document).ready(function() {
-
-        // get Edit Gejala
-        $('.btn-edit').on('click', function() {
-            // get data from button edit
-            const idsuratkeluar = $(this).data('id');
-            const kodesurat = $(this).data('kodesurat');
-            const nosurat = $(this).data('nosurat');
-            const tglkeluar = $(this).data('tglkeluar');
-            const tglsurat = $(this).data('tglsurat');
-            const namabagian = $(this).data('namabagian');
-            const kepada = $(this).data('kepada');
-            const perihal = $(this).data('perihal');
-
-
-            // Set data to Form Edit
-            $('.idsuratkeluar_edit').val(idsuratkeluar);
-            $('.kodesuratkeluar_edit').val(kodesurat);
-            $('.nosuratkeluar_edit').val(nosurat);
-            $('.tglkeluar_edit').val(tglkeluar);
-            $('.tglsurat_edit').val(tglsurat);
-            $('.namabagian_edit').val(namabagian);
-            $('.kepada_edit').val(kepada);
-            $('.perihal_edit').val(perihal);
-
-            // Call Modal Edit
-            $('#editModal').modal('show');
-
-
-        });
-
-
-    });
 </script>
+<!-- All of javascript logic in this page are in this file -->
+<script src="<?= base_url('/public/assets/js/admin/suratKeluar.js') ?>"></script>
+
+
 
 <?= $this->endSection(); ?>

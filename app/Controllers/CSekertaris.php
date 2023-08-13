@@ -704,4 +704,15 @@ class CSekertaris extends BaseController
         $dompPdf->render();
         $dompPdf->stream();
     }
+
+    public function no_surat()
+    {
+        $kode = $this->request->getGet('kode');
+        $no = $this->mSekertaris->nomorSuratTerakhir($kode);
+        if ($no[0]->number == null) {
+            return $this->response->setJSON([["number" => "0"]]);
+        } else {
+            return $this->response->setJSON($no);
+        }
+    }
 }
