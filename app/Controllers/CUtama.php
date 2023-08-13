@@ -49,6 +49,15 @@ class CUtama extends BaseController
         return view('login/registrasi', $data);
     }
 
+    public function link_lupa_kata_sandi()
+    {
+        return view('login/forgotpassword');
+    }
+    public function link_lupa_kata_sandi2()
+    {
+        return view('login/forgotpassword2');
+    }
+
     public function link_logout()
     {
         session()->destroy();
@@ -254,7 +263,7 @@ class CUtama extends BaseController
 
     public function link_konfirmasi_surat_masuk()
     {
-        $filter = $this->request->getGet('filter');   
+        $filter = $this->request->getGet('filter');
         if ($this->validation_login() != "lurah") {
             return view("login/index");
         }

@@ -1,0 +1,179 @@
+CRITICAL - 2023-08-13 00:23:41 --> Undefined variable $checkData
+in APPPATH\Controllers\CLogin.php on line 285.
+ 1 APPPATH\Controllers\CLogin.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $checkData', 'APPPATH\\Controllers\\CLogin.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:24:08 --> Undefined variable $checkData
+in APPPATH\Controllers\CLogin.php on line 283.
+ 1 APPPATH\Controllers\CLogin.php(283): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $checkData', 'APPPATH\\Controllers\\CLogin.php', 283)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:25:02 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:25:11 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:25:26 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:25:33 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:48:09 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 00:49:54 --> Cannot access offset of type string on string
+in APPPATH\Models\MLogin.php on line 56.
+ 1 APPPATH\Controllers\CLogin.php(280): App\Models\MLogin->checkUser('username', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 01:37:31 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2121.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2057): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\CLogin.php(282): App\Models\MLogin->changePassword(null, 'ilham', null)
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 01:38:21 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2121.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2057): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\CLogin.php(282): App\Models\MLogin->changePassword(null, 'ilham', null)
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 01:39:48 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2121.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2057): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\CLogin.php(282): App\Models\MLogin->changePassword(null, 'ilham', null)
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 01:40:50 --> You must use the "set" method to update an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2121.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2057): CodeIgniter\Database\BaseBuilder->validateUpdate()
+ 2 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update(null)
+ 3 APPPATH\Controllers\CLogin.php(287): App\Models\MLogin->changePassword(null, 'ilham', null)
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->checkusername()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 02:37:47 --> mysqli_sql_exception: Unknown column 'ilham' in 'field list' in C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` ...', 0)
+#1 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` ...')
+#2 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` ...')
+#3 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` ...', Array, false)
+#4 C:\laragon\www\Belajar\SIKADES4\app\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+#5 C:\laragon\www\Belajar\SIKADES4\app\Controllers\CLogin.php(290): App\Models\MLogin->changePassword('33', 'ilham')
+#6 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+#7 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+#8 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Belajar\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 02:37:47 --> Unknown column 'ilham' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` SET `ilham` = :ilham:
+WHERE `id_login` = :id_login:', [...], false)
+ 5 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+ 6 APPPATH\Controllers\CLogin.php(290): App\Models\MLogin->changePassword('33', 'ilham')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 02:41:06 --> mysqli_sql_exception: Unknown column 'ilham' in 'field list' in C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` ...', 0)
+#1 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` ...')
+#2 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` ...')
+#3 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` ...', Array, false)
+#4 C:\laragon\www\Belajar\SIKADES4\app\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+#5 C:\laragon\www\Belajar\SIKADES4\app\Controllers\CLogin.php(289): App\Models\MLogin->changePassword('33', 'ilham')
+#6 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+#7 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+#8 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Belajar\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 02:41:06 --> Unknown column 'ilham' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` SET `ilham` = :ilham:
+WHERE `id_login` = :id_login:', [...], false)
+ 5 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+ 6 APPPATH\Controllers\CLogin.php(289): App\Models\MLogin->changePassword('33', 'ilham')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-13 02:41:36 --> mysqli_sql_exception: Unknown column 'ilham' in 'field list' in C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\Belajar\SIKADES4\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` ...', 0)
+#1 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` ...')
+#2 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` ...')
+#3 C:\laragon\www\Belajar\SIKADES4\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` ...', Array, false)
+#4 C:\laragon\www\Belajar\SIKADES4\app\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+#5 C:\laragon\www\Belajar\SIKADES4\app\Controllers\CLogin.php(289): App\Models\MLogin->changePassword('33', 'ilham')
+#6 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+#7 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+#8 C:\laragon\www\Belajar\SIKADES4\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Belajar\SIKADES4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-08-13 02:41:36 --> Unknown column 'ilham' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `login` SET `ilham` = \'\'
+WHERE `id_login` = \'33\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `login` SET `ilham` = :ilham:
+WHERE `id_login` = :id_login:', [...], false)
+ 5 APPPATH\Models\MLogin.php(62): CodeIgniter\Database\BaseBuilder->update('ilham')
+ 6 APPPATH\Controllers\CLogin.php(289): App\Models\MLogin->changePassword('33', 'ilham')
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CLogin->changePassword()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CLogin))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

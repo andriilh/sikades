@@ -34,51 +34,19 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: linear-gradient(to right, dodgerblue, deepskyblue, skyblue, lightblue, powderblue, skyblue, deepskyblue);">
 			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
-				<form class="login100-form validate-form flex-sb flex-w" action="<?= base_url(); ?>/CLogin/cek_login_control" method="post">
+				<form class="login100-form validate-form flex-sb flex-w" method="post" id="form">
 					<span class="login100-form-title p-b-53">
-						LOGIN
+						LUPA KATA SANDI
 					</span>
 
-					<div class="p-t-31 p-b-9">
+					<div class="p-t-31 p-b-9 w-full" id="input-container">
 						<span class="txt1">
 							Username
 						</span>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="p-t-13 p-b-9">
-						<span class="txt1">
-							Password
-						</span>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="password">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="container-login100-form-btn m-t-17">
-						<button class="login100-form-btn">
-							Sign In
-						</button>
-					</div>
-
-					<div class="w-full text-center p-t-55">
-						<span class="txt2">
-							Belum punya akun?
-						</span>
-
-						<a href="<?= base_url(); ?>/CUtama/link_registrasi" class="txt2 bo1">
-							Daftar sekarang
-						</a>
-					</div>
-					<div class="w-full text-center">
-
-						<a href="<?= base_url(); ?>/CUtama/link_lupa_kata_sandi" class="txt2 bo1">
-							Lupa kata sandi?
-						</a>
+						<div class="wrap-input100 validate-input">
+							<input class="input100" type="text" name="username" autofocus>
+						</div>
+						<span class="text-danger d-none" id="username-error">Username</span>
 					</div>
 				</form>
 			</div>
@@ -114,53 +82,11 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script>
-		const flashData = $('.flash-data').data('flashdata');
-		if (flashData) {
-			Swal.fire(
-				'Gagal Masuk',
-				'Username atau Password salah!',
-				'error'
-			)
-		}
-
-		const flashData2 = $('.flash-data2').data('flashdata');
-		if (flashData2) {
-			Swal.fire(
-				'Case sensitive',
-				'Username dan Password bersifat case sensitive!',
-				'warning'
-			)
-		}
-
-		const flashData3 = $('.flash-data3').data('flashdata');
-		if (flashData3) {
-			Swal.fire(
-				'Field Kosong!',
-				'Field tidak boleh kosong!',
-				'warning'
-			)
-		}
-
-		const flashData4 = $('.flash-data4').data('flashdata');
-		if (flashData4) {
-			Swal.fire(
-				'Akun Belum Aktif!',
-				'Maaf akun belum aktif, silahkan hubungin admin terlebih dahulu!',
-				'error'
-			)
-		}
-
-		const flashData5 = $('.flash-data5').data('flashdata');
-		if (flashData5) {
-			Swal.fire(
-				'Registrasi berhasil',
-				'Mohon tunggu konfirmasi dari admin untuk pengaktifan akun',
-				'success'
-			)
-		}
+		const base_url = '<?= base_url(); ?>'
 	</script>
+	<script src="<?= base_url('/public/assets/js/login/forgotpassword.js'); ?>"></script>
 </body>
 
 </html>

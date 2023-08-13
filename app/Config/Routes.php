@@ -40,6 +40,8 @@ $routes->set404Override();
 
 $routes->get('/', 'CProfile::index');
 $routes->get('/CUtama/link_login', 'Cutama::link_login');
+$routes->get('/CUtama/link_lupa_kata_sandi', 'Cutama::link_lupa_kata_sandi');
+$routes->get('/CUtama/link_lupa_kata_sandi2', 'Cutama::link_lupa_kata_sandi2');
 $routes->post('/CLogin/registrasi', 'CLogin::registrasi');
 $routes->get('/CUtama/link_registrasi', 'Cutama::link_registrasi');
 $routes->get('/CUtama/link_logout', 'Cutama::link_logout');
@@ -130,6 +132,7 @@ $routes->get('/CSekertaris/printpdf_surat_masuk', 'CSekertaris::printpdf_surat_m
 $routes->get('/CSekertaris/printpdf_surat_keluar', 'CSekertaris::printpdf_surat_keluar');
 
 $routes->add('/CLogin/cek_login_control', 'CLogin::cek_login_control');
+$routes->add('/CLogin/changepassword', 'CLogin::changePassword');
 
 $routes->get('/CUtama/link_konfirmasi_surat_masuk', 'Cutama::link_konfirmasi_surat_masuk', ['filter']);
 $routes->get('/CUtama/link_konfirmasi_surat_keluar', 'Cutama::link_konfirmasi_surat_keluar', ['filter']);

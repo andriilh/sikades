@@ -8,6 +8,9 @@ use App\Models\MSekertaris;
 use App\Models\MLurah;
 use App\Models\MMasyarakat;
 use CodeIgniter\I18n\Time;
+use Error;
+
+use function PHPUnit\Framework\isEmpty;
 
 class CLogin extends BaseController
 {
@@ -268,6 +271,27 @@ class CLogin extends BaseController
         if ($tambahdatapengguna && $tambahdatalogin) {
             session()->setFlashdata('tambah', 'tambah');
             return view('login/index');
+        }
+    }
+
+    public function changePassword()
+    {
+        $password = $this->request->getPost('password');
+        // return $this->response->setJSON($password);
+        if ($password == null) {
+            $checkData = $this->mLogin->checkUser($this->request->getPost('username'));
+            if (!isEmpty($checkData)) {
+                return $this->response->setStatusCode(400, 'Username ' . $this->request->getPost('username') . ' tidak terdaftar');
+            } else {
+                return $this->response->setJSON($checkData);
+            }
+        } else {
+            try {
+                $this->mLogin->changePassword($this->request->getPost('id'), $this->request->getPost('password'));
+                return $this->response->setStatusCode(200);
+            } catch (Error $error) {
+                return $this->response->setStatusCode(500, $error);
+            }
         }
     }
 }

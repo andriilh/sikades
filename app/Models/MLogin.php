@@ -48,4 +48,18 @@ class MLogin extends Model
     {
         return $this->db->table('login')->insert($data);
     }
+
+    public function checkUser($username)
+    {
+        return $this->db->table('login')
+            ->select(['username', 'id_login', 'id_user'])
+            ->where(['username' => $username])
+            ->get()->getRowArray();
+    }
+
+    public function changePassword($id, $password)
+    {
+        $data = ['password' => $password];
+        return $this->db->table('login')->where('id_login', $id)->update($data);
+    }
 }
