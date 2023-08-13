@@ -66,7 +66,7 @@ $routes->get('/CUtama/link_ubah_profile_masyarakat', 'Cutama::link_ubah_profile_
 $routes->get('/CUtama/link_ubah_us_ps_sekertaris', 'Cutama::link_ubah_us_ps_sekertaris');
 $routes->get('/CUtama/link_ubah_us_ps_lurah', 'Cutama::link_ubah_us_ps_lurah');
 $routes->get('/CUtama/link_ubah_us_ps_masyarakat', 'Cutama::link_ubah_us_ps_masyarakat');
-$routes->get('/CUtama/link_pengajuan_surat_masyarakat', 'Cutama::link_pengajuan_surat_masyarakat', ['filter']);
+$routes->get('/CUtama/link_pengajuan_surat_masyarakat', 'Cutama::link_pengajuan_surat_masyarakat', ['filter', 'status']);
 $routes->get('/CUtama/link_lihat_file_surat_masuk_sekertaris/(:any)', 'Cutama::link_lihat_file_surat_masuk_sekertaris/$1');
 $routes->get('/CUtama/link_lihat_file_pengajuan_surat_lurah/(:any)', 'Cutama::link_lihat_file_pengajuan_surat_lurah/$1');
 $routes->get('/CUtama/link_lihat_file_surat_keluar_sekertaris/(:any)', 'Cutama::link_lihat_file_surat_keluar_sekertaris/$1');
@@ -74,6 +74,7 @@ $routes->get('/CUtama/link_lihat_file_surat_masuk_lurah/(:any)', 'Cutama::link_l
 $routes->get('/CUtama/link_lihat_file_surat_keluar_lurah/(:any)', 'Cutama::link_lihat_file_surat_keluar_lurah/$1');
 $routes->get('/CUtama/link_lihat_file_pengajuan_surat_sekertaris/(:any)', 'Cutama::link_lihat_file_pengajuan_surat_sekertaris/$1');
 $routes->get('/CSekertaris/download_file_surat_masuk/(:any)', 'CSekertaris::download_file_surat_masuk/$1');
+$routes->get('/masyarakat/notification', 'CMasyarakat::notification');
 
 
 $routes->post('/CSekertaris/tambah_data_surat', 'CSekertaris::tambah_data_surat');

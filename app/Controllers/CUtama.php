@@ -381,13 +381,15 @@ class CUtama extends BaseController
     public function link_pengajuan_surat_masyarakat()
     {
         $filter = $this->request->getGet('filter');
+        $status = $this->request->getGet('status');
+
         if ($this->validation_login() != "masyarakat") {
             return view("login/index");
         }
 
         session()->set('halaman', 'pengajuan_surat_masyarakat');
         $datasurat               = $this->mMasyarakat->tampilkan_data_surat();
-        $datapengajuanmasyarakat = $this->mMasyarakat->tampilkan_data_pengajuan(session()->get('nik'), $filter);
+        $datapengajuanmasyarakat = $this->mMasyarakat->tampilkan_data_pengajuan(session()->get('nik'), $filter, $status);
 
         $data = [
             'judul_bar'        => 'SIKADES | Pengajuan Surat',

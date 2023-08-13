@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/public/dashboard/plugins/summernote/summernote-bs4.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/public/dashboard/dist/css/style.css">
 
+    <script>
+        const base_url = '<?= base_url() ?>';
+    </script>
     <script src="<?= base_url(); ?>/public/Fontawesome/js/all.js"></script>
 
     <link rel="stylesheet" href="<?= base_url(); ?>/public/dashboard/plugins/select2/css/select2.min.css">
@@ -61,7 +64,7 @@
     <!-- ./wrapper -->
 
     <!-- jQuery -->
-    <script src="<?= base_url(); ?>/public/dashboard/plugins/jquery/jquery.min.js"></script>
+    <script src="<?= base_url(); ?>/public/assets/js/common/jquery370.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="<?= base_url(); ?>/public/dashboard/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -97,6 +100,7 @@
 
     <script src="<?= base_url(); ?>/public/dashboard/plugins/select2/js/select2.full.min.js"></script>
     <script src="<?= base_url(); ?>/public/Datatables/datatables.min.js"></script>
+    <script src="<?= base_url() ?>/public/assets/js/user/notifikasi.js"></script>
 </body>
 
 </html>

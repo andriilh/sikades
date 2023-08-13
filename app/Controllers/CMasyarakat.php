@@ -113,4 +113,26 @@ class CMasyarakat extends BaseController
             return view('dashboard/pages/user/v_pengajuan_surat', $data);
         }
     }
+
+    public function notification()
+    {
+        $all = $this->mMasyarakat->notifications(session()->get('nik'), 'all');
+        $menunggu = $this->mMasyarakat->notifications(session()->get('nik'), 'menunggu');
+        $diproses = $this->mMasyarakat->notifications(session()->get('nik'), 'diproses');
+        $ditolak = $this->mMasyarakat->notifications(session()->get('nik'), 'ditolak');
+        $disetujui = $this->mMasyarakat->notifications(session()->get('nik'), 'disetujui');
+        $disetujui2 = $this->mMasyarakat->notifications(session()->get('nik'), 'disetujui2');
+        $selesai = $this->mMasyarakat->notifications(session()->get('nik'), 'selesai');
+
+        $data = [
+            'all'       => intval($all[0]['count']),
+            'menunggu'  => intval($menunggu[0]['count']),
+            'diproses'  => intval($diproses[0]['count']),
+            'disetujui' => intval($disetujui[0]['count']) + intval($disetujui2[0]['count']),
+            'selesai'   => intval($selesai[0]['count']),
+            'ditolak'   => intval($ditolak[0]['count']),
+        ];
+
+        return $this->response->setJSON($data);
+    }
 }

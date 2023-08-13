@@ -14,20 +14,35 @@ class MMasyarakat extends Model
             ->get()->getRowArray();
     }
 
-    public function tampilkan_data_pengajuan($id, $filter)
+    public function tampilkan_data_pengajuan($id, $filter, $status)
     {
-        if ($filter === null) {
+        if ($filter === null && $status === null) {
             return $this->db->table('pengajuan_surat')
                 ->join('surat', 'surat.id_surat=pengajuan_surat.id_surat')
                 ->join('sekertaris', 'sekertaris.id_sekertaris=pengajuan_surat.acc_admin', 'left')
                 ->where('pengajuan_surat.NIK', $id)
                 ->get()->getResultArray();
-        } else {
+        } else if ($filter !== null) {
             return $this->db->query("SELECT * FROM pengajuan_surat
             JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
             LEFT JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
             WHERE pengajuan_surat.NIK = '" . $id . "'
             AND nama_surat LIKE '" . $filter . "%'")->getResultArray();
+        } else if ($status !== null) {
+            if ($status === 'disetujui') {
+                return $this->db->query("SELECT * FROM pengajuan_surat
+                JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
+                LEFT JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
+                WHERE pengajuan_surat.NIK = '" . $id . "'
+                AND status = 'disetujui' OR status = 'disetujui2'")
+                    ->getResultArray();
+            } else {
+                return $this->db->query("SELECT * FROM pengajuan_surat
+                JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
+                LEFT JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
+                WHERE pengajuan_surat.NIK = '" . $id . "'
+                AND status = '" . $status . "'")->getResultArray();
+            }
         }
     }
 
@@ -98,5 +113,22 @@ class MMasyarakat extends Model
             ->join('syarat', 'syarat.id_syarat=syarat_surat.id_syarat')
             ->orderBy('surat.nama_surat')
             ->get()->getResultArray();
+    }
+
+    public function notifications($id, $filter)
+    {
+        // return "SELECT COUNT(*) AS 'count' FROM pengajuan_surat
+        // JOIN surat ON surat.id_surat = pengajuan_surat.id_surat 
+        // LEFT JOIN sekertaris ON sekertaris.id_sekertaris = pengajuan_surat.acc_admin
+        // WHERE pengajuan_surat.NIK = '" . $id . "'
+        // AND status = '" . $filter . "'";
+        if ($filter == 'all') {
+            return $this->db->query("SELECT COUNT(*) AS 'count' FROM pengajuan_surat
+                WHERE pengajuan_surat.NIK = '" . $id . "'")->getResultArray();
+        } else {
+            return $this->db->query("SELECT COUNT(*) AS 'count' FROM pengajuan_surat
+                WHERE pengajuan_surat.NIK = '" . $id . "'
+                AND status = '" . $filter . "'")->getResultArray();
+        }
     }
 }

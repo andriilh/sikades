@@ -204,3 +204,61 @@ in APPPATH\Controllers\CSekertaris.php on line 712.
  2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CSekertaris))
  3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 12:46:47 --> Undefined array key 0
+in APPPATH\Controllers\CMasyarakat.php on line 127.
+ 1 APPPATH\Controllers\CMasyarakat.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\CMasyarakat.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CMasyarakat->notification()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMasyarakat))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 12:49:39 --> Attempt to read property "count" on array
+in APPPATH\Controllers\CMasyarakat.php on line 128.
+ 1 APPPATH\Controllers\CMasyarakat.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "count" on array', 'APPPATH\\Controllers\\CMasyarakat.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CMasyarakat->notification()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMasyarakat))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 12:50:38 --> Attempt to read property "count" on array
+in APPPATH\Controllers\CMasyarakat.php on line 125.
+ 1 APPPATH\Controllers\CMasyarakat.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "count" on array', 'APPPATH\\Controllers\\CMasyarakat.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CMasyarakat->notification()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMasyarakat))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 12:51:00 --> Undefined array key "count"
+in APPPATH\Controllers\CMasyarakat.php on line 125.
+ 1 APPPATH\Controllers\CMasyarakat.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Controllers\\CMasyarakat.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CMasyarakat->notification()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMasyarakat))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 13:26:21 --> Undefined variable $persyaratan
+in APPPATH\Views\dashboard\pages\user\home.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\user\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persyaratan', 'APPPATH\\Views\\dashboard\\pages\\user\\home.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\user\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/user/home', [], true)
+ 5 APPPATH\Controllers\CUtama.php(107): view('dashboard/pages/user/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_home_masyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 13:26:33 --> Undefined variable $persyaratan
+in APPPATH\Views\dashboard\pages\user\home.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\user\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persyaratan', 'APPPATH\\Views\\dashboard\\pages\\user\\home.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\user\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/user/home', [], true)
+ 5 APPPATH\Controllers\CUtama.php(107): view('dashboard/pages/user/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_home_masyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 13:33:59 --> Undefined variable $state
+in APPPATH\Models\MMasyarakat.php on line 31.
+ 1 APPPATH\Models\MMasyarakat.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $state', 'APPPATH\\Models\\MMasyarakat.php', 31)
+ 2 APPPATH\Controllers\CUtama.php(392): App\Models\MMasyarakat->tampilkan_data_pengajuan('3072892323', null, 'selesai')
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_pengajuan_surat_masyarakat()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
