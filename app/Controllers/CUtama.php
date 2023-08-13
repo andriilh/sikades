@@ -98,10 +98,11 @@ class CUtama extends BaseController
 
         session()->set('halaman', 'home_masyarakat');
         $hometotalpengajuansurat = $this->mMasyarakat->home_getTotalPengajuanSurat(session()->get('nik'));
+        $datapersyaratan = $this->mMasyarakat->tampilkan_data_persyaratan();
         $data = [
             'judul_bar'               => 'SIKADES | Home',
-            'hometotalpengajuansurat' => $hometotalpengajuansurat
-
+            'hometotalpengajuansurat' => $hometotalpengajuansurat,
+            'persyaratan'             => $datapersyaratan
         ];
 
         return view('dashboard/pages/user/home', $data);

@@ -262,3 +262,25 @@ in APPPATH\Models\MMasyarakat.php on line 31.
  4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 13:58:22 --> Undefined variable $persyaratan
+in APPPATH\Views\dashboard\pages\user\home.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\user\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persyaratan', 'APPPATH\\Views\\dashboard\\pages\\user\\home.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\user\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/user/home', [], true)
+ 5 APPPATH\Controllers\CUtama.php(107): view('dashboard/pages/user/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_home_masyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-13 13:59:21 --> Undefined variable $persyaratan
+in APPPATH\Views\dashboard\pages\user\home.php on line 37.
+ 1 APPPATH\Views\dashboard\pages\user\home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $persyaratan', 'APPPATH\\Views\\dashboard\\pages\\user\\home.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\pages\\user\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard/pages/user/home', [], true)
+ 5 APPPATH\Controllers\CUtama.php(107): view('dashboard/pages/user/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CUtama->link_home_masyarakat()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CUtama))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

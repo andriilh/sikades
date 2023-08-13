@@ -157,10 +157,6 @@ class CLogin extends BaseController
                         $hometotalpengajuansurat = $this->mMasyarakat->home_getTotalPengajuanSurat($cekLoginMasyarakat['NIK']);
                         $datapersyaratan = $this->mMasyarakat->tampilkan_data_persyaratan();
 
-                        // echo "<pre>";
-                        // print_r($datapersyaratan);
-                        // die();
-
                         $data = [
                             'judul_bar'               => 'SIKADES | Home',
                             'judul_halaman'           => 'Home',

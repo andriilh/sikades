@@ -30,6 +30,7 @@
         <div class="row">
             <div class="col-lg-4 col-3">
                 <h3>Syarat Pengajuan Surat</h3>
+                <input type="text" class="form-control my-3" placeholder="Cari Surat" id="searchSyarat" onkeyup="search()">
                 <div class="accordion" id="accordionExample">
                     <div class="card">
                         <?php
@@ -37,20 +38,21 @@
                         foreach ($persyaratan as $p) {
                             $count += 1;
                         ?>
-                            <div class="card-header" id="<?= 'heading-' . $count ?>">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#<?= 'collapse' . $count ?>" aria-expanded="false" aria-controls="<?= 'collapse' . $count ?>">
-                                        <?= $p['nama_surat']; ?>
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="<?= 'collapse' . $count ?>" class="collapse" aria-labelledby="<?= 'heading-' . $count ?>" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Syarat untuk mengajukan <?= $p['keterangan_surat'] ?> adalah:
-                                    <ul>
-                                        <li><?= $p['nama_syarat']; ?></li>
-                                    </ul>
+                            <div class="collapse-wrapper">
+                                <div class="card-header" id="<?= 'heading-' . $count ?>">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#<?= 'collapse' . $count ?>" aria-expanded="false" aria-controls="<?= 'collapse' . $count ?>">
+                                            <?= $p['nama_surat']; ?>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="<?= 'collapse' . $count ?>" class="collapse" aria-labelledby="<?= 'heading-' . $count ?>" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Syarat untuk mengajukan <?= $p['keterangan_surat'] ?> adalah:
+                                        <ul>
+                                            <li><?= $p['nama_syarat']; ?></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         <?php } ?>
@@ -63,5 +65,6 @@
     </div><!-- /.container-fluid -->
 </section>
 
+<script src="<?= base_url('/public/assets/js/user/home.js'); ?>"></script>
 
 <?= $this->endSection(); ?>
