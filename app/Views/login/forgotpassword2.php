@@ -46,6 +46,11 @@
 						<div class="wrap-input100 validate-input">
 							<input class="input100" type="password" name="password" autofocus>
 						</div>
+						<div class="container-login100-form-btn m-t-17">
+							<button type="submit" class="login100-form-btn">
+								Ubah
+							</button>
+						</div>
 					</div>
 				</form>
 			</div>

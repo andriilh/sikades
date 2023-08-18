@@ -14,7 +14,7 @@ $.ajax({
                                 <div class="dropdown-divider"></div>`
 
         const cardProses = `    <a href="${base_url}/CUtama/link_pengajuan_surat_masyarakat?status=proses" class="dropdown-item">
-                                    <i class="fas fa-clock mr-2"></i> ${res.proses} Proses
+                                    <i class="fas fa-clock mr-2"></i> ${res.diproses} Proses
                                 </a>
                                 <div class="dropdown-divider"></div>`
 
@@ -45,7 +45,7 @@ $.ajax({
         if (res.menunggu > 0) {
             notificationContainer.append(cardMenunggu);
         }
-        if (res.proses > 0) {
+        if (res.diproses > 0) {
             notificationContainer.append(cardProses);
         }
         if (res.disetujui > 0) {

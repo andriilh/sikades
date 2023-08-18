@@ -48,6 +48,11 @@
 						</div>
 						<span class="text-danger d-none" id="username-error">Username</span>
 					</div>
+					<div class="container-login100-form-btn m-t-17">
+						<button type="submit" class="login100-form-btn">
+							Ok
+						</button>
+					</div>
 				</form>
 			</div>
 		</div>

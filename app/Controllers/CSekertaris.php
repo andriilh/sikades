@@ -618,7 +618,7 @@ class CSekertaris extends BaseController
             'keterangan' => $this->request->getPost('keterangan')
         ];
 
-        if ($file) {
+        if (!isEmpty($file->getName())) {
             $file->move('public/Pengajuansurat/Masyarakat');
             $addFileSurat = [
                 'file_surat'    => $file->getName()
