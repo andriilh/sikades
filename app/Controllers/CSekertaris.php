@@ -159,6 +159,7 @@ class CSekertaris extends BaseController
 
     public function tambah_data_pengajuan_saya()
     {
+        date_default_timezone_set('Asia/Jakarta');
         $datamasyarakat = [
             'id_masyarakat'   => $this->request->getPost('idmasyarakat'),
             'nama_masyarakat' => $this->request->getPost('nama'),
@@ -189,6 +190,7 @@ class CSekertaris extends BaseController
             'file'               => $namafilepengajuansaya,
             'status'             => 'disetujui',
             'tipe_pengajuan'     => 'admin',
+            'tgl_pengajuan'      => date('Y-m-d'),
             'operator'           => session()->get('id_user')
         ];
 

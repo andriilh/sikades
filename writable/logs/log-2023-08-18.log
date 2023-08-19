@@ -1,0 +1,6 @@
+CRITICAL - 2023-08-18 16:18:12 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\CMasyarakat.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\CMasyarakat->tambah_pengajuan_surat()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CMasyarakat))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

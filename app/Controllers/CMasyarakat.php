@@ -61,6 +61,7 @@ class CMasyarakat extends BaseController
         $filesurat = $this->request->getFile('filepengajuansurat');
         $filesurat->move('public/Pengajuansurat');
         $namafilepengajuansurat = $filesurat->getName();
+        date_default_timezone_set('Asia/Jakarta');
 
         $data = [
             'id_pengajuan_surat' => $this->request->getPost('id_pengajuan'),
@@ -69,6 +70,7 @@ class CMasyarakat extends BaseController
             'file'               => $namafilepengajuansurat,
             'status'             => 'menunggu',
             'tipe_pengajuan'     => 'mandiri',
+            'tgl_pengajuan'      => date('Y-m-d'),
             'operator'           => session()->get('id_user')
         ];
 
